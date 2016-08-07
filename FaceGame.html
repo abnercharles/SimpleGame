@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>A simple game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <h1 style="white-space: nowrap;">请在左图中找出一个右图没有的元素</h1>
+    <form>
+        <button type="button" onclick="generateLevel()">Click to start</button>
+        当前关卡：
+        <input id="level" type="text" value = "1" maxlength="3" style="width:20px; height: 15px">
+        请在限定时间内完成：
+        <input id ="timerBox" type="text" value="10" style="width:20px; height: 15px">
+    </form>
+    <hr>
+    <svg id="face" onclick="fail()" data-name="smile" xmlns="http://www.w3.org/2000/svg" style="height: 50px; width:50px; position: absolute; top: 20px; left: 20px; visibility: hidden" viewBox="0 0 288 288"><defs><style>.cls-1{fill:#ffdd71;}.cls-2{fill:#fbb03b;}.cls-3{fill:#a67c52;}.cls-4{fill:none;stroke:#f7931e;stroke-linecap:round;stroke-miterlimit:10;stroke-width:14px;}</style></defs><title>smile</title><path class="cls-1" d="M150,285.5C75.29,285.5,14.5,224.71,14.5,150S75.29,14.5,150,14.5,285.5,75.29,285.5,150,224.71,285.5,150,285.5Z" transform="translate(-6 -6)"/><path class="cls-2" d="M150,23a127,127,0,0,1,89.8,216.8A127,127,0,1,1,60.2,60.2,126.17,126.17,0,0,1,150,23m0-17A144,144,0,1,0,294,150,144,144,0,0,0,150,6Z" transform="translate(-6 -6)"/><ellipse class="cls-3" cx="100.5" cy="100.67" rx="21.75" ry="29.67"/><ellipse class="cls-3" cx="187.5" cy="100.67" rx="21.75" ry="29.67"/><path class="cls-4" d="M67,171.09s12.76,66.26,83,66.26,83-66.26,83-66.26" transform="translate(-6 -6)"/></svg>
+
+    <div id="leftSide" style="background-color: lightblue; position: absolute;top:120px;left:10px">   
+    
+    </div>
+    <div id="rightSide" style="background-color: lightblue; position: absolute;top:120px;left:420px">
+    </div>
+
+    <script src="face.js">
+        
+    </script>
+</body>
+
+</html>

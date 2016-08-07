@@ -1,0 +1,1 @@
+a simple game created with js
